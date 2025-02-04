@@ -1,0 +1,596 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FF8F12;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 50px; /* Ajuste o tamanho do logo conforme necessário */
+    padding-right: 40px;
+}
+
+/* Caixa de pesquisa com ícone */
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Mantém o tamanho da pesquisa */
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 300px 10px 10px; /* Espaço extra à direita para o ícone */
+    border: 4px solid #c7710e;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/* Ícone da bússola dentro da barra de pesquisa */
+.search-icon {
+    position: absolute;
+    right: -300px; /* Mantém o ícone à direita */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Ajuste do tamanho do ícone */
+    height: auto;
+    opacity: 0.7; /* Ícone mais suave */
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.search-icon:hover {
+    opacity: 1;
+}
+
+/* Ícone do Carrinho */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: auto; /* Empurra o ícone do carrinho para a direita */
+    margin-right: 30px;
+    padding-left: 40px;
+}
+
+.cart-icon img {
+    height: 39px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff402f;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Ícone do Caminhão */
+.truck-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 700px;
+}
+
+.truck-icon img {
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.truck-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #FF8F12;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Centraliza os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #646464; /* Cor laranja para o hover */
+}
+
+/* Estilos do Banner */
+.banner {
+    width: 100%; /* Ocupa a largura total da página */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o container */
+}
+
+.banner img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do container */
+    height: 100%; /* Faz a imagem ocupar toda a altura do container */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* Seção Ofertas da Semana */
+.ofertas {
+    text-align: left;
+    padding: 30px 20px;
+}
+
+.ofertas h2 {
+    font-size: 28px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Container dos cards */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* Estilização de cada card */
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #646464;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card button {
+    background-color: #FF8F12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #c7710e;
+}
+
+/* Seção Mais Vendidos */
+.vendidos {
+    text-align: left;
+    padding: 30px 20px;
+}
+
+.vendidos h2 {
+    font-size: 28px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Container dos vendidos */
+.container-vendidos {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* Estilização de cada card */
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #646464;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card button {
+    background-color: #FF8F12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #c7710e;
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    background-color: #FF8F12;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Empurra a imagem mais para a esquerda */
+.sobre-img {
+    flex-grow: 1; /* Faz a imagem ocupar mais espaço e ir para a esquerda */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sobre-img img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -50px; /* Ajuste fino para empurrar mais à esquerda */
+}
+
+/* Estilização do Texto */
+.sobre-texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.sobre-texto h2 {
+    font-size: 65px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.sobre-texto p {
+    font-size: 19px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Título das Formas de Pagamento */
+.formas-pagamento h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FF8F12;
+}
+
+/* Ícones das formas de pagamento */
+.pagamentos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.pagamentos img {
+    width: 50px;
+    height: auto;
+    filter: brightness(90%);
+    transition: transform 0.3s;
+}
+
+.pagamentos img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+/* Links do rodapé */
+.links-rodape {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.links-rodape a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.links-rodape a:hover {
+    color: #FF8F12;
+}
+
+/* Direitos Autorais */
+.copy {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Título da página */
+.titulo-pagina {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-pagina h2 {
+    font-size: 28px;
+    color: #FF8F12;
+}
+
+/* Seção de todos os produtos */
+.todos-produtos {
+    padding: 20px;
+}
+
+/* Container dos produtos */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilização dos cards */
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF8F12;
+}
+
+.card button {
+    background-color: #FF8F12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #c7710e;
+}
+
+/* Título da página */
+.titulo-pagina {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-pagina h2 {
+    font-size: 28px;
+    color: #FF8F12;
+}
+
+/* Seção de Contato */
+.contato {
+    padding: 20px;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Formulário */
+form {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #c7710e;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    background-color: #FF8F12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #c7710e;
+}
+
+/* Informações de Contato */
+.info-contato {
+    max-width: 400px;
+    text-align: left;
+}
+
+.info-contato h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FF8F12;
+}
+
+.info-contato p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Estilização do carrinho */
+.carrinho {
+    padding: 20px;
+    text-align: center;
+}
+
+.container-carrinho {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background: #FF8F12;
+    color: white;
+}
+
+td img {
+    width: 60px;
+    border-radius: 8px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.remover {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remover:hover {
+    background: darkred;
+}
+
+/* Total do carrinho */
+.total-carrinho {
+    text-align: right;
+    font-size: 18px;
+}
+
+.finalizar-compra {
+    background: #FF8F12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.finalizar-compra:hover {
+    background: #c7710e;
+}

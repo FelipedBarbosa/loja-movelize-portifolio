@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - Movelize</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Móveis Descolados">
+        </div>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-cart">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produtos...">
+                <img src="bussula.png" alt="Ícone de Bússola" class="search-icon">
+            </div>
+        </div>
+
+        <!-- Ícones -->
+        <div class="truck-icon">
+            <img src="caminhão.png" alt="Entrega Rápida">
+        </div>
+
+        <div class="cart-icon">
+            <a href="carrinho.html">
+                <img src="carrinho.png" alt="Carrinho de Compras">
+                <span class="cart-count">2</span> <!-- Número de itens no carrinho -->
+            </a>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título da Página -->
+    <section class="titulo-pagina">
+        <h2>Meu Carrinho</h2>
+    </section>
+
+    <!-- Seção do Carrinho -->
+    <section class="carrinho">
+        <div class="container-carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="movel1.PNG" alt="Cadeira Moderna"></td>
+                        <td>Cadeira Moderna</td>
+                        <td>R$ 299,99</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>R$ 299,99</td>
+                        <td><button class="remover">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="movel2.PNG" alt="Sofá Confortável"></td>
+                        <td>Sofá Confortável</td>
+                        <td>R$ 1.299,99</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>R$ 1.299,99</td>
+                        <td><button class="remover">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Total -->
+            <div class="total-carrinho">
+                <p><strong>Total: R$ 1.599,98</strong></p>
+                <button class="finalizar-compra">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="formas-pagamento">
+            <h3>Formas de Pagamento</h3>
+            <div class="pagamentos">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/mastercard.svg" alt="Mastercard">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/visa.svg" alt="Visa">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/cartao-luiza.svg" alt="PayPal">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/elo.svg" alt="Pix">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/american-express.svg" alt="Amex">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/boleto.svg" alt="Boleto">
+            </div>
+        </div>
+
+        <div class="links-rodape">
+            <a href="index.html">Sobre Nós</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Entrega e Frete</a>
+            <a href="#">Trocas e Devoluções</a>
+            <a href="#">Fale Conosco</a>
+        </div>
+
+        <div class="copy">
+            <p>© 2024 Movelize. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
