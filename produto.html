@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movelize</title>
+    <link rel="icon" type="image/x-icon" href="Imagens/favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Imagens/logo.png" alt="Logo Móveis Descolados">
+        </div>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-box">
+            <input type="text" placeholder="Buscar produtos...">
+            <img src="Imagens/bussula.png" alt="Ícone de Bússola" class="search-icon">
+        </div>
+
+        <!-- Contêiner para os ícones -->
+        <div class="icons-container">
+            <!-- Ícone do Caminhão -->
+            <div class="truck-icon">
+                <a href="frete.html">
+                    <img src="Imagens/caminhão.png" alt="Entrega Rápida">
+                </a>
+            </div>
+
+            <!-- Ícone do Carrinho -->
+            <div class="cart-icon">
+                <a href="carrinho.html">
+                    <img src="Imagens/carrinho.png" alt="Carrinho de Compras">
+                    <span class="cart-count">2</span> <!-- Número de itens no carrinho -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cartão de Produto -->
+    <section class="sessao-produto">
+        <div class="cartao-produto">
+            <div class="imagem">
+                <img id="imagem-principal" src="id" alt="Produto">
+            </div>
+            <div class="informacoes">
+                <h3 id="nome-produto"></h3>
+                <p class="avaliacao" id="avaliacoes-produto"></p>
+                <p id="descricao-produto"></p>
+            </div>
+            <div class="preco">
+                <div class="preco-desconto">
+                    <p class="preco-maior" id="preco-antigo"><s>R$ 10.000</s></p>
+                    <span class="desconto">10% OFF</span>
+                </div>
+                <p class="preco-final" id="preco-produto"></p> <!-- Preço final -->
+                <p class="parcelamento">Até 12x no Cartão</p> <!-- Informação de parcelamento -->
+                <button id="comprar-btn">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Ofertas da Semana -->
+        <section class="ofertas">
+            <h2>Ofertas da Semana!</h2>
+            <div class="container-cards">
+                <div class="card">
+                    <img src="Imagens/movel 1.PNG" alt="Produto 1">
+                    <h3>Cadeira Moderna</h3>
+                    <p>R$ 299,99</p>
+                    <a href="produto.html?id=1" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Imagens/movel 2.PNG" alt="Produto 2">
+                    <h3>Sofá Confortável</h3>
+                    <p>R$ 1.299,99</p>
+                    <a href="produto.html?id=2" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Imagens/movel 3.PNG" alt="Produto 3">
+                    <h3>Mesa de Jantar</h3>
+                    <p>R$ 899,99</p>
+                    <a href="produto.html?id=3" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Imagens/movel 4.PNG" alt="Produto 4">
+                    <h3>Estante Elegante</h3>
+                    <p>R$ 499,99</p>
+                    <a href="produto.html?id=4" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Imagens/movel 5.PNG" alt="Produto 5">
+                    <h3>Poltrona Aconchegante</h3>
+                    <p>R$ 699,99</p>
+                    <a href="produto.html?id=5" class="btn-comprar">Comprar</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Rodape -->
+    <footer class="rodape">
+        <!-- Formas de Pagamento -->
+        <div class="formas-pagamento">
+            <h3>Formas de Pagamento</h3>
+            <div class="pagamentos">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/mastercard.svg" alt="Mastercard">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/visa.svg" alt="Visa">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/cartao-luiza.svg" alt="PayPal">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/elo.svg" alt="Pix">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/american-express.svg" alt="Amex">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/boleto.svg" alt="Boleto">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/aura.svg" alt="Elo">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/hipercard.svg" alt="Hipercard">
+                <img src="https://wx.mlcdn.com.br/site/desk/footer/payment-types/diners.svg" alt="Google Pay">
+            </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="links-rodape">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Entrega e Frete</a>
+            <a href="#">Trocas e Devoluções</a>
+            <a href="#">Fale Conosco</a>
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="copy">
+            <p>© 2024 Movelize. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="produto.js"></script>
+</body>
+
+</html>

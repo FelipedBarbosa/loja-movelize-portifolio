@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Frete</title>
+    <link rel="icon" type="image/x-icon" href="Imagens/favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Imagens/logo.png" alt="Logo Móveis Descolados">
+        </div>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-box">
+            <input type="text" placeholder="Buscar produtos...">
+            <img src="Imagens/bussula.png" alt="Ícone de Bússola" class="search-icon">
+        </div>
+
+        <!-- Contêiner para os ícones -->
+        <div class="icons-container">
+            <!-- Ícone do Caminhão -->
+            <div class="truck-icon">
+                <a href="frete.html">
+                    <img src="Imagens/caminhão.png" alt="Entrega Rápida">
+                </a>
+            </div>
+
+            <!-- Ícone do Carrinho -->
+            <div class="cart-icon">
+                <a href="carrinho.html">
+                    <img src="Imagens/carrinho.png" alt="Carrinho de Compras">
+                    <span class="cart-count">2</span> <!-- Número de itens no carrinho -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="conteudo">
+            <h2>Como Funciona</h2>
+            <p>Digite o código de rastreio da sua encomenda para verificar o status atual da entrega. 
+               Basta inserir o número que você recebeu e descobrir onde sua encomenda está!</p>
+        </section>
+
+        <section class="rastreamento">
+            <form action="pagina_rastreamento.html" method="get">
+                <label for="codigo-rastreio">Digite o Código de Rastreamento:</label>
+                <input type="text" id="codigo-rastreio" name="codigo-rastreio" required placeholder="Ex: 1234567890">
+                <button type="submit">Rastrear</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
