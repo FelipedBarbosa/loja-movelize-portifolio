@@ -151,7 +151,7 @@ nav ul li a:hover {
 .container-cards {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 30px;  /* Aumentei o espaçamento entre os cartões */
     flex-wrap: wrap;
 }
 
@@ -198,7 +198,6 @@ nav ul li a:hover {
     background-color: #d37101;
 }
 
-
 /* Seção Mais Vendidos */
 .vendidos {
     text-align: left;
@@ -215,7 +214,7 @@ nav ul li a:hover {
 .container-vendidos {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 30px;  /* Aumentei o espaçamento entre os cartões */
     flex-wrap: wrap;
 }
 
@@ -259,6 +258,7 @@ nav ul li a:hover {
 .card button:hover {
     background-color: #c7710e;
 }
+
 
 /* Seção Sobre Nós */
 .sobre-nos {
@@ -770,3 +770,130 @@ h2 {
     margin: 20px 33%;
 }
 
+/* Exemplo de ajuste para desktop */
+@media (min-width: 1024px) {
+    .card {
+      width: 15%;  /* Ajuste o valor conforme necessário */
+      margin: 15px;
+    }
+  }
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    nav {
+    margin-top: -1px;
+    }
+    /* Oculta o ícone do caminhão */
+    .truck-icon {
+        display: none;
+    }
+
+    /* Oculta o ícone do carrinho */
+    .cart-icon {
+        display: none;
+    }
+
+    /* Ajusta o header para centralizar apenas o logo e a barra de pesquisa */
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Ajusta a margem do logo */
+    .logo img {
+        margin-right: 230px;
+    }
+
+    /* Ajusta a largura da barra de pesquisa */
+    .search-box {
+        width: 85%;
+        max-width: 100%;
+    }
+
+    .card {
+        width: calc(50% - 20px); /* 2 cartões por linha com espaço entre eles */
+        max-width: 100%; /* Garante que não ultrapasse a largura do container */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+    }
+
+    .container-cards, .container-vendidos {
+        gap: 10px; /* Reduz o espaço entre os cartões */
+    }
+
+    .sobre-img img {
+        width: 100%; /* Reduz a largura da imagem para 80% do container */
+        max-width: 400px; /* Define um tamanho máximo para a imagem */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+
+    .container-sobre {
+        justify-content: center; /* Centraliza o conteúdo em telas menores */
+    }
+
+    .cartao-produto {
+        flex-direction: column; /* Empilha a imagem e as informações verticalmente */
+        align-items: center; /* Centraliza o conteúdo */
+        padding: 0 10px; /* Reduz o padding lateral */
+    }
+
+    .cartao-produto .imagem, .cartao-produto .informacoes {
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    .cartao-produto .preco {
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    .cartao-produto .preco .preco-final {
+        font-size: 28px; /* Reduz o tamanho da fonte do preço */
+    }
+
+    .cartao-produto .preco button {
+        margin-top: 10px; /* Reduz o espaço acima do botão */
+        font-size: 15px; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px; /* Reduz ainda mais o tamanho do logo */
+    }
+
+    .search-box input {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+
+    .sobre-texto h2 {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+    }
+
+    .sobre-texto p {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .preco-info .price {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    .preco-maior {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .desconto {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+
+    .cartao-produto .preco button {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        margin-top: 10px; /* Reduz o espaço acima do botão */
+    }
+
+    .cartao-produto .preco .preco-final {
+        font-size: 24px; /* Reduz ainda mais o tamanho da fonte do preço */
+    }
+
+    .cartao-produto .preco button {
+        font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    }
+}
