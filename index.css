@@ -774,7 +774,7 @@ h2 {
 @media (min-width: 1024px) {
     .card {
       width: 15%;  /* Ajuste o valor conforme necessário */
-      margin: 15px;
+      margin: 12px;
     }
   }
 
